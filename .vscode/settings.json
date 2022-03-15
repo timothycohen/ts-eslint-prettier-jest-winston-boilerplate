@@ -1,0 +1,9 @@
+{
+  /* #################### FORMATTING / LINTING */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
+  "editor.formatOnSave": true,
+  "[markdown]": { "editor.formatOnSave": false },
+  "editor.codeActionsOnSave": { "source.fixAll": true }
+}
