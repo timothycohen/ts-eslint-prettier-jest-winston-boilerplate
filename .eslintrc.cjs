@@ -48,7 +48,6 @@ const global = {
 
 const js = {
   ...global,
-  parser: '@babel/eslint-parser',
 };
 
 const ts = {
