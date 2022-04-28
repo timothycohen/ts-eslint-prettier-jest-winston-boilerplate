@@ -1,10 +1,9 @@
-## This boilerplate was made to quickly develop TypeScript when a server isn't needed
+# My go-to boilerplate for TypeScript without a server
 ### compilation and watching: swc + nodemon
 ### formatting and linting: eslint + prettier
 ### testing: jest
 ### logging: winston
 
-## It uses the following packages:
 ```json
 {
   "devDependencies": {
@@ -74,26 +73,4 @@
     "winston": "^3.6.0"
   }
 }
-```
-
-## This should also work well as a foundation before installing a backend framework. This isn't for React / Next.
-
-### Next
-- Next uses swc under the hood and has its own eslint config. Use their boilerplate: [next](https://nextjs.org/docs/basic-features/eslint).
-- Add prettier-eslint to run the formatter before the linter.
-
-### React
-- Use [wes bos's](https://github.com/wesbos/eslint-config-wesbos)
-- Remove eslint-plugin-prettier and add prettier-eslint. eslint-plugin-prettier turns all prettier errors into eslint errors, which leads to a sea of red. prettier-eslint silently fixes formatting issues and keeps eslint errors.
-- Take the nested eslintConfig.prettier rules and put them in their own .prettierrc file (or in the package.json)
-
-- Wes's installs a few more packages, like the following, and also updates the defaults
-```json
-/* react (eslint only) */
-"@babel/preset-react": "^7.16.0",
-"eslint-plugin-jsx-a11y": "^6.5.1",
-"eslint-plugin-react": "^7.27.1",
-"eslint-plugin-react-hooks": "^4.3.0",
-// allows experimental features
-"@babel/eslint-parser": "^7.16.3",
 ```
