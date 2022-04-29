@@ -15,11 +15,7 @@ const global = {
     'no-unused-expressions': [2, { allowTaggedTemplates: true }],
     'comma-dangle': 0,
     'max-len': 0,
-    // swc compilation (typescript) doesn't add .js or transform .ts --> .js extensions. Therefore running the files with node fails
-    // adding .ts is a ts error, so it needs to be a .js extension even though that file doesn't really exist in the src directory
-    // turn off these linting errors, add .js extensions and add .js extension in import statements
-    // for jest, add a moduleNameMapper to add .ts or transform .js --> .ts
-    'import/extensions': 2,
+    'import/extensions': 0,
     'import/no-unresolved': 0,
     'import/prefer-default-export': 0,
     'no-underscore-dangle': 0,

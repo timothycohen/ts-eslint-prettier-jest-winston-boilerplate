@@ -1,4 +1,4 @@
-import { sayHi } from '../index.js';
+import { sayHi } from '../index';
 
 it('happy path', () => {
   const response = sayHi();

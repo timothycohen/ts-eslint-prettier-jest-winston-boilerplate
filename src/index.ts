@@ -1,4 +1,4 @@
-import { logger } from './utils/logger.js';
+import { logger } from './utils/logger';
 
 export const sayHi = () => {
   // prettier will turn this to single quotes

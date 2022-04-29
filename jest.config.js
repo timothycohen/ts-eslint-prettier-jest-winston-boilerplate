@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   transformIgnorePatterns: [],
   testEnvironment: 'node',

@@ -8,5 +8,8 @@
     "targets": {
       "node": 17
     }
+  },
+  "module": {
+    "type": "commonjs"
   }
 }
