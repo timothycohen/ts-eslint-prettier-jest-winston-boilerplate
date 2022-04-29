@@ -1,10 +1,10 @@
 {
-  "name": "ts-eslint-prettier-jest-winston-boilerplate",
-  "version": "2.0.0",
+  "name": "ts-sandbox",
+  "version": "2.1.0",
   "description": "boilerplate for quick testing of ts files",
   "main": "index.js",
   "keywords": [],
-  "repository": "git@github.com:timothycohen/ts-eslint-prettier-jest-winston-boilerplate",
+  "repository": "git@github.com:timothycohen/ts-sandbox",
   "author": "Tim Cohen",
   "license": "ISC",
   "scripts": {

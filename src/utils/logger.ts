@@ -3,9 +3,10 @@ import { createLogger, format, transports } from 'winston';
 const { timestamp, combine, uncolorize, json, colorize, printf } = format;
 
 /** winston levels are as follows: error warn info http verbose debug silly
- *  log errors to './logs/error.log'
- *  log everything with a level of error/warn/info/http to './logs/combined.log'
  *  log everything with a level of error/warn/info/http/verbose/debug to the console
+ *  log everything with a level of error/warn/info/http to './logs/combined.log'
+ *  log errors only to './logs/error.log'
+ *  log debug only to './logs/debug.log'
  */
 
 const debugOnly = format(info => (info.level === 'debug' ? info : false));
@@ -23,7 +24,7 @@ const options = {
     ),
   },
   console: {
-    level: 'http', // error warn info http
+    level: 'debug', // error warn info http verbose debug
     format: combine(
       colorize(),
       timestamp({ format: 'MMM-DD-YYYY HH:mm:ss' }),
